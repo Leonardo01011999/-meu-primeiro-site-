@@ -1,0 +1,177 @@
+<DOCTYPE html>
+	<html lang="Pt-br">
+	<head>
+		<meta charset="utf-8">
+		<body style="background-color: white;">
+		<style>
+			body, html {
+				text-align:center
+				height:0%;
+			    margin:0%;
+			    padding:25%;
+			}
+		</style>
+	</head>
+	<body>
+		<title>Leonardo Adriano Amaro</title>
+		<h1>C++</h1>
+		<h1>Variáveis</h1>
+		<p>Em C++ existem alguns modificadores de faixa (ou intervalo). Isso altera a faixa de valores suportada pela variável (mas a capacidade de armazenamento continua a mesma). São eles: short, long, unsigned e signed.</p>
+		<p>Short
+O modificador short, que é uma palavra reservada da linguagem, fixa a faixa dos valores inteiros (int) para -32.768 até 32.767. Quando você declara um inteiro, ele inicialmente é da faixa de um long int. Se você quer reduzir a faixa, use short int.</p>
+<p>Long
+No subtópico "inteiros", dissemos que a faixa de um número inteiro é de -2.147.483.648 até 2.147.483.647. Na verdade, quando você declara um int, ele já é um long int. Ao declarar um long int, estamos apenas assegurando essa faixa de valores para int.
+
+Long também pode ser utilizado com float. Nesse caso, a faixa de valores de float será a mesma de um double.</p>
+<p>Unsigned e signed
+Estes modificadores alteram a faixa dos números inteiros (int) e caracteres (char) para valores somente positivos (unsigned) ou fixa a faixa deles em valores com sinal (signed). Por padrão, se você não declarar esses modificadores, as variáveis tipo inteiro e caracter ASCII serão signed.
+
+Quando definimos que um inteiro terá valores sem sinal (unsigned), na verdade estamos dizendo que só estamos admitindo valores positivos. Isso altera a faixa de um inteiro para 0 até 4.294.967.295 - uma capacidade maior para números positivos). Se você declarar um valor negativo, ocorrerá um estouro de faixa.
+
+Com signed, fixamos a faixa normal para um número inteiro.</p>
+<h1>Tipos De Dados</h1>
+<p>Existem sete tipos de dados básicos ou fundamentais em C++, chamados de Tipos Primitivos. int,float, double, char ,wchar_t, bool, void.</p>
+<h1>Operadores</h1>
+<p>A linguagem C++ inclui todos os operadores C e adiciona vários operadores novos. Os operadores especificam uma avaliação a ser executada em um ou mais operandos.
+Tabela de associatividade e precedência do operador C++
+A tabela a seguir mostra a precedência e a associatividade dos operadores C++ (da precedência mais alta a mais baixa). Os operadores com o mesmo número de precedência têm igual precedência, a menos que outra relação seja explicitamente forçada por parênteses.
+
+Descrição do operador	Operador	Alternativa
+Precedência do grupo 1, sem associatividade		
+Resolução do escopo	::	
+Precedência do grupo 2, associatividade da esquerda para a direita		
+Seleção de membros (objeto ou ponteiro)	. ou ->	
+Subscrito da matriz	[]	
+Chamada de função	()	
+Incremento pós-fixo	++	
+Decréscimo pós-fixo	--	
+Nome do tipo	typeid	
+Conversão de tipo constante	const_cast	
+Conversão dinâmica de tipos	dynamic_cast	
+Conversão de tipo reinterpretada	reinterpret_cast	
+Conversão de tipo estático	static_cast	
+Precedência do grupo 3, associatividade da direita para a esquerda		
+Tamanho do objeto ou tipo	sizeof	
+Incremento de prefixo	++	
+Decremento de prefixo	--	
+Complemento de um	~	compl
+Expressão NOT lógica	!	not
+Negação unária	-	
+Unário mais	+	
+Endereço-de	&	
+Indireção	*	
+Criar objeto	new	
+Destruir objeto	delete	
+Converter	()	
+Precedência do grupo 4, associatividade da esquerda para a direita		
+Ponteiro para membro (objetos ou ponteiros)	.* ou ->*	
+Precedência do grupo 5, associatividade da esquerda para a direita		
+Multiplicação	*	
+Divisão	/	
+Módulo	%	
+Precedência do grupo 6, associatividade da esquerda para a direita		
+Adição	+	
+Subtração	-	
+Precedência do grupo 7, associatividade da esquerda para a direita		
+Deslocamento à esquerda	<<	
+Deslocamento à direita	>>	
+Precedência do grupo 8, associatividade da esquerda para a direita		
+Menor que	<	
+Maior que	>	
+Menor ou igual a	<=	
+Maior ou igual a	>=	
+Precedência do grupo 9, associatividade da esquerda para a direita		
+Igualdade	==	
+Desigualdade	!=	not_eq
+Precedência do grupo 10, associatividade da esquerda para a direita		
+AND bit a bit	&	bitand
+Precedência do grupo 11, associatividade da esquerda para a direita		
+Bitwise exclusivo OU	^	xor
+Precedência do grupo 12, associatividade da esquerda para a direita		
+Bitwise inclusive OU	|	bitor
+Precedência do grupo 13, associatividade da esquerda para a direita		
+AND lógico	&&	and
+Precedência do grupo 14, associatividade da esquerda para a direita		
+OR lógico	||	or
+Precedência do grupo 15, associatividade da direita para a esquerda		
+Condicional	? :	
+Cessão	=	
+Atribuição de multiplicação	*=	
+Atribuição de divisão	/=	
+Atribuição de módulos	%=	
+Atribuição de adição	+=	
+Atribuição de subtração	-=	
+Atribuição de deslocamento para a esquerda	<<=	
+Atribuição de deslocamento para a direita	>>=	
+Bitwise E atribuição	&=	and_eq
+Atribuição OU inclusiva bit a bit	|=	or_eq
+Atribuição OR exclusiva Bitwise	^=	xor_eq
+Expressão de lançamento	throw	
+Precedência do grupo 16, associatividade da esquerda para a direita		
+Comma	,	</p>
+<h1>Loops e Funções</h1>
+<p>Laços (loops em inglês), ou estruturas de repetição, são comandos existentes nas linguagens de programação destinados a executar uma ou mais instruções quantas vezes forem necessárias. Cada ciclo de um loop é chamado de iteração. Podemos ter também loops dentro de outro loop.
+
+While
+O while, "enquanto" em inglês, é um laço que ordena o computador a executar determinadas instruções enquanto uma condição for verdadeira. Isso faz com que um comando seja executado uma vez a cada verificação da condição. De modo geral o comando sempre deve ser elaborado de forma que se leve a condição de execução a ser falsa em algum momento, de forma a interromper o laço para que o resto do programa entre em execução.
+</p>
+<h1>Funções Do Loops</h1>
+Os loops servem para que os programas implementem iterações, ou seja, executem o mesmo bloco de código duas ou mais vezes enquanto a condição declarada é completada. Quando a condição se torna falsa, o programa sai do loop e continua a ser executado de forma sequencial.
+<h1>Estrura Iniciais</h1>
+<p>Os computadores têm memória, sendo através da sua manipulação que os programas eventualmente acabam por chegar aos resultados pretendidos (as saídas).  As linguagens de alto nível, como o C++, "escondem" a memória por trás do conceito de variável.  As variáveis são, na realidade, pedaços de memória a que se atribui um nome, que têm um determinado conteúdo ou valor, e cujo conteúdo é interpretado de acordo com o tipo da variável.  Todas as variáveis têm um dado tipo.  Uma variável pode ser, por exemplo, do tipo int em C++.  Se assim for, essa variável terá sempre um valor inteiro de uma gama de valores admissível.
+Os tipos das variáveis não passam, na realidade, de uma abstração.  Todas as variáveis, independentemente do seu tipo, são representadas na memória do computador por padrões de bits (dígitos binários, binary digit), os famosos "zeros e uns", colocados na zona de memória atribuída a essa variável.  O tipo duma variável indica simplesmente como um dado padrão de bits deve ser interpretado.
+
+Cada variável tem duas características estáticas: um nome e um tipo, e uma característica dinâmica: um valor.  Antes de usar uma variável é necessário indicar ao compilador qual o seu nome e tipo, de modo a que a variável possa ser criada, i.e., ficar associada a uma posição de memória (ou várias posições de memória), e de modo a que a forma de interpretar os padrões de bits nessa posição de memória fique estabelecida.  Uma instrução onde se cria uma variável com um dado nome, dum determinado tipo, e com um determinado valor inicial denomina-se definição.  A instrução:
+
+int a = 10;
+é a definição de uma variável chamada a que pode guardar valores do tipo int (inteiros) e cujo valor inicial é o inteiro 10.  A sintaxe das definições pode ser algo complicada, mas em geral tem a forma acima, isto é, o nome do tipo seguido do nome da variável e seguido de uma inicialização.
+Uma forma intuitiva de ver uma variável é imaginá-la como uma folha de papel com um nome associado e onde se decidiu escrever apenas números inteiros, por exemplo.  Outras restrições são que a folha de papel pode conter apenas um valor em cada instante, pelo que a escrita dum novo valor implica o apagamento do anterior, e que tem de conter sempre um valor, como se viesse já preenchida de fábrica.
+
+Quando uma variável é definida, o computador reserva para ela na memória o número de bits necessário para guardar um valor do tipo referido (essas reservas são feitas em múltiplos de uma unidade básica de memória, tipicamente com oito bits, ou seja, um byte).  Se a variável não for explicitamente inicializada, essa posição de memória contém um padrão de bits arbitrário.  Por exemplo, se se tivesse usado a definição
+
+int a;
+a variável a conteria um padrão de bits arbitrário e portanto um valor inteiro arbitrário.  Para evitar esta arbitrariedade, que pode ter consequências nefastas num programa se não se tiver cuidado, ao definir uma variável deve-se, sempre que possível e razoável, atribuir-se-lhe um valor inicial como indicado na primeira definição.  A atribuição de um valor a uma variável que acabou de ser definida é chamada a inicialização.  Esta operação pode ser feita de várias maneiras *:
+int a = 10;  // como originalmente.
+int a(10);   // forma alternativa.
+A sintaxe das definições de variáveis também permite que se definam mais do que uma variável numa só instrução.  Por exemplo,
+int a = 0, b = 1, c = 2;
+define três variáveis todas do tipo int.</p>
+<h1>Estrutura Funcional</h1>
+<p>C++ é uma linguagem de multiparadigm, sistemas-nível que fornece abstrações de alto nível com muito baixa (muitas vezes de zero) de tempo de execução custo. Os paradigmas comumente associados com C++ incluem programação procedural, orientada a objeto e genérica. Porque C++ oferece excelentes ferramentas para programação de alto nível, a programação do mesmo estilo funcional é bastante razoável.
+
+Pela programação de estilo funcional, não me refiro que a programação é estritamente funcional, só que é fácil de usar muitos dos blocos funcionais em C++. Este artigo irá se concentrar em uma das mais importantes construções programação funcionais: Trabalhando com valores em vez de identidades. Falarei sobre o forte suporte C++ sempre teve para trabalhar com valores e, em seguida, mostrar como o novo padrão de C++ 11 expande este suporte com lambdas. Finalmente, vou apresentar um método de trabalhar com estruturas de dados imutáveis que mantém a velocidade que c++ é conhecido para, fornecendo a proteção que têm desfrutado de linguagens funcionais.</p>
+<h1>Estrutura De Finzalização</h1>
+<p>A função exit deve ser usada quando se quer terminar a execução do programa, retornando para o sistema operacional um indicativo. Tanto em Unix/Linux como em Windows/DOS existem maneiras de se obter o número retornado.
+
+O retorno 0 (zero) indica para o sistema operacional que o programa terminou corretamente, um retorno diferente de 0 (zero) indica um erro.
+
+Veja o exemplo:
+
+/* programa exit.c */
+ 
+#include <stdio.h>
+#include <stdlib.h>
+int main (void)
+{
+   int iValor_a;
+   int iValor_b;
+ 
+   while (1)
+   {
+      printf("Valores:");
+      scanf("%d %d", &iValor_a, &iValor_b);
+ 
+      if (iValor_a == 0)
+      {
+         exit(0);
+      }
+      if (iValor_b == 0)
+      {
+         exit (11);
+      }
+      printf("Divisao : %d\n", iValor_a / iValor_b);
+   }
+ 
+   return 0;
+}</p>
+</body>
